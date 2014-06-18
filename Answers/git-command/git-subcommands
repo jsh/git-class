@@ -1,0 +1,23 @@
+When you type a git commands, like "git show" what happens?
+The git command itself, invokes the git-subcommand, "git-show" .
+Git subcommands are typically installed in their own directory, which isn't in your $PATH, but the git command itself knows about.
+
+(Answers below are for my Ubuntu 14.04 laptop, right now. YMMV.)
+
+- Where are the git subcommands installed?
+/usr/lib/git-core
+
+- How many are there?
+167
+
+- How does that compare to the number of commands in each subdirectory in your $PATH?
+
+  $ for i in ${PATH//:/ }; do printf "$i: "; ls $i | wc -l; done
+  /home/jhaemer/bin: 9
+  /usr/local/sbin: 2
+  /usr/local/bin: 9
+  /usr/sbin: 267
+  /usr/bin: 2729
+  /sbin: 250
+  /bin: 152
+  /usr/games: 5
