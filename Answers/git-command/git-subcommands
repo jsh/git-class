@@ -2,8 +2,6 @@ When you type a git commands, like "git show" what happens?
 The git command itself, invokes the git-subcommand, "git-show" .
 Git subcommands are typically installed in their own directory, which isn't in your $PATH, but the git command itself knows about.
 
-(Answers below are for my Ubuntu 14.04 laptop, right now. YMMV.)
-
 - Where are the git subcommands installed?
 /usr/lib/git-core
 

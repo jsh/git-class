@@ -12,7 +12,6 @@ Let's build a one-liner to show what it knows about.
                                     # which strings actually are absolute paths
 
 - What is each one?
-On Ubuntu 14.04
 
   $ file $(for i in $(strings $(which git) | grep ^/); do [ -e $i ] && echo $i; done)
 
