@@ -21,3 +21,11 @@ Git subcommands are typically installed in their own directory, which isn't in y
   /sbin: 250
   /bin: 152
   /usr/games: 5
+
+A dramatic reading of that command:
+
+  $ echo $PATH                                                    # this is your path
+  $ echo ${PATH//:/ }                                             # this is your path on spaces
+  $ for i in ${PATH://: }; do echo $i; done                       # process one path directory at a time
+  $ for i in ${PATH://: }; do echo $i; ls $i | wc -l; done        # count entries in each dir
+  $ for i in ${PATH://: }; do printf "$i: "; ls $i | wc -l; done  # beauty is truth, truth beauty
