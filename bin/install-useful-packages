@@ -1,0 +1,10 @@
+#!/bin/bash -eu
+# Packages you'll want to install
+
+pkgs=git          # or else why take the course?
+pkgs+=' psmisc'   # for pstree
+pkgs+=' gitg'     # or gitk, or something else to visualize repos
+pkgs+=' tree'     # to visualize hierarchies
+
+sudo apt-get install $pkgs
+
