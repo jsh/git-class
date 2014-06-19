@@ -14,7 +14,7 @@ Add a file.
   $ touch README
   $ git add README
 
-- What's changed? [Hint: use "tree -a"]
+- What changes in the objects directory? [Hint: use "tree .git/objects" before and after]
 
 git cat-file is the Bass-O-Matic of git commands. It will tell you what you want to know about objects.
 
@@ -39,10 +39,10 @@ Add a second, empty file
 
 Add a third file that isn't empty.
 
-  $ cat '
+  $ cat <<__EOF__ > hello
   #!/bin/bash -eu
   echo hello, world
-  ' > hello
+  __EOF__
   $ chmod +x hello
   $ git add .
   $ git commit -m"The canonical program."
