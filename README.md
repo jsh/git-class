@@ -19,7 +19,6 @@ I treat this as a feature, not a bug.
 If you work differently, or run some other Linux flavor, details may differ,
 but you won't have much trouble translating on the fly.
 
-If you work with git using a gui tool, or on Windows or a Mac, YMMV.
+If you work with git through a gui tool or an IDE, or run it on Windows or a Mac, YMMV.
 
 I'm saying this once, at the outset, to keep from having to say it all over the place as I go along.
-
