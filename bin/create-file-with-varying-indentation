@@ -1,0 +1,10 @@
+#!/bin/bash -eu
+# output lines with ever-increasing indentation levels
+# testcase for markdown to see where it starts
+# treating lines as code-blocks
+
+for n in {0..20}; do
+  printf "\nThis is a line with N leading spaces.\n" |
+    perl -p -e 's/^(.*)/" " x $ENV{n} . $1/e; s/N/$ENV{n}/'
+done
+echo

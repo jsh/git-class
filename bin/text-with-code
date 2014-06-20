@@ -1,0 +1,26 @@
+This file has examples of indented code.
+It's a testcase for a code-indenting tool
+and for markdown.
+
+
+This is under-indented code:
+
+ $ date
+ Fri Jun 20 05:57:38 MDT 2014
+
+This is over-indented code:
+
+                   $ echo hello, world
+                   hello, world
+
+- This is code in a bulleted list:
+
+  $ date
+  Fri Jun 20 05:57:38 MDT 2014
+
+Here's code not indented at all:
+
+$ date
+Fri Jun 20 05:57:38 MDT 2014
+
+And here's a final line, as a sentinel.

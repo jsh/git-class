@@ -1,0 +1,14 @@
+#!/bin/bash -eu
+# move already-indented code blocks
+# to specified indentataion level (default=4)
+
+usage="$0 [-n indent] [filename]"
+
+export indent=4
+
+if [[ ${1-} = "-n" ]]; then
+  indent=$2
+  shift 2
+fi
+
+perl -pe 's/^\h+/" " x $ENV{indent}/e' $*
