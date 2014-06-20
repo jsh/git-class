@@ -6,7 +6,7 @@ by watching it as we grow it.
 
 Make a directory, cd into it, and create the repo.
 
-    $ mkdir /tmp/$LOGNAME; cd $_; git init
+     $ mkdir /tmp/$LOGNAME; cd $_; git init
 
 This creates a git repository.
 
@@ -14,10 +14,10 @@ This creates a git repository.
 
 Add a file.
 
-    $ touch README
-    $ git add README
+        $ touch README
+        $ git add README
 
-- What changes in the objects directory? [Hint: use "tree .git/objects" before and after]
+- What changes in the objects directory? [Hint: use `tree .git/objects` before and after]
 
 `git cat-file` is the Bass-O-Matic of git commands. It will tell you what you want to know about objects.
 
@@ -26,7 +26,7 @@ and `git cat-file -p e69d` to show what's in it.
 
 Now commit it.
 
-     $ git commit -m"initial"
+      $ git commit -m"initial"
 
 - What's changed?  Use `git cat-file` to figure out what the new objects are and what's in them.
 
@@ -34,21 +34,21 @@ Now commit it.
 
 Add a second, empty file
 
-    $ touch foo
-    $ git add foo
+      $ touch foo
+      $ git add foo
 
-- What's changed? Why? What does "git status" say?
+- What's changed? Why? What does `git status` say?
 
 - What happens when you commit it?
 
 Add a third file that isn't empty.
 
-    $ cat <<__EOF__ > hello
-    #!/bin/bash -eu
-    echo hello, world
-    __EOF__
-    $ chmod +x hello
-    $ git add .
-    $ git commit -m"The canonical program."
+      $ cat <<__EOF__ > hello
+      #!/bin/bash -eu
+      echo hello, world
+      __EOF__
+      $ chmod +x hello
+      $ git add .
+      $ git commit -m"The canonical program."
 
 - Examine the results.

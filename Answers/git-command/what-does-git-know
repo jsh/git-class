@@ -1,27 +1,28 @@
 What's git know about?
+======================
 
 The git command is just a front end.
 
 Let's build a one-liner to show what it knows about.
 
-  $ which git                       # tells you where git is
-  $ file $(which git)               # tells you it's a binary
-  $ strings $(which git)            # tells you what printable strings are in the binary
-  $ strings $(which git) | grep ^/  # which printable strings might be absolute paths
-  $ for i in $(strings $(which git) | grep ^/); do [ -e $i ] && echo $i; done
-                                    # which strings actually are absolute paths
+       $ which git                       # tells you where git is
+       $ file $(which git)               # tells you it's a binary
+       $ strings $(which git)            # tells you what printable strings are in the binary
+       $ strings $(which git) | grep ^/  # which printable strings might be absolute paths
+       $ for i in $(strings $(which git) | grep ^/); do [ -e $i ] && echo $i; done
+                                         # which strings actually are absolute paths
 
 - What is each one?
 
-  $ file $(for i in $(strings $(which git) | grep ^/); do [ -e $i ] && echo $i; done)
-
-  /lib64/ld-linux-x86-64.so.2: symbolic link to `/lib/x86_64-linux-gnu/ld-2.19.so' 
-  /bin/sh:                     symbolic link to `bash' 
-  /usr:                        directory 
-  /usr/lib/git-core:           directory 
-  /usr/share/locale:           directory 
-  /tmp:                        sticky, directory 
-  /dev/tty:                    character special 
+       $ file $(for i in $(strings $(which git) | grep ^/); do [ -e $i ] && echo $i; done)
+     
+       /lib64/ld-linux-x86-64.so.2: symbolic link to `/lib/x86_64-linux-gnu/ld-2.19.so' 
+       /bin/sh:                     symbolic link to `bash' 
+       /usr:                        directory 
+       /usr/lib/git-core:           directory 
+       /usr/share/locale:           directory 
+       /tmp:                        sticky, directory 
+       /dev/tty:                    character special 
 
 - Why does git know about them?
 
