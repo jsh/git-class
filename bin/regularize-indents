@@ -6,7 +6,7 @@ usage="$0 [-n indent] [filename]"
 
 export indent=4
 
-if [[ ${1:?$usage} = "-n" ]]; then
+if [[ ${1-} = "-n" ]]; then
   indent=$2
   shift 2
 fi
