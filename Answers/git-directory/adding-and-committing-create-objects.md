@@ -11,6 +11,7 @@ Make a directory, `cd` into it, and create the repo.
 This creates a git repository.
 
 - What's there?  Use `tree -a` to inspect the contents.
+
         .
         └── .git
         ├── branches
