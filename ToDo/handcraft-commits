@@ -1,0 +1,5 @@
+
+git hash-object /dev/null
+git hash-object -w /dev/null
+printf "blob 0\0" | sha1sum
+cat .git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391 | zlib-flate -uncompress | od -c
