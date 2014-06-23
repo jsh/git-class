@@ -116,3 +116,12 @@ Check **master** back out.
 
 It should only change `.git/HEAD`.
 If not, go back and figure out what you've missed.
+
+Delets a blighted branch
+
+    $ git branch -d chestnut
+
+- What's that doing?
+
+It just deletes the one-line file refs/heads/boxelder . The sticky is gone, but the objects are still in refs/objects
+

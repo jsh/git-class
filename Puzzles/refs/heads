@@ -42,3 +42,10 @@ Commit a change to **boxelder**.
 Check **master** back out.
 
 - Does it change what you think it would?
+
+Delets a blighted branch
+
+    $ git branch -d chestnut
+
+- What's that doing?
+
