@@ -1,5 +1,5 @@
 The refs/heads Directory Points at Branches
-====
+===========================================
 
 Create a new git repo, add an empty file, and an initial commit.
 

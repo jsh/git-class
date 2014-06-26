@@ -1,4 +1,4 @@
-Tags Are Like Immutable Branches
+Tags Are like Immutable Branches
 ================================
 
 (Git has two kinds of tags. First, we'll consider the light-weight flavor.)

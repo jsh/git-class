@@ -1,5 +1,5 @@
-Symbolic Refs
-=============
+Symbolic Refs Act Like Symlinks
+===============================
 
 In Unix and its descendents -- like Linux, *BSD, OS/X --  real (hard) links are names for inodes.
 In contrast, symbolic links are just files that contain the names of other files.
