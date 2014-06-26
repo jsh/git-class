@@ -52,3 +52,6 @@ Add a third file that isn't empty.
     $ git commit -m"The canonical program."
 
 - Examine the results.
+
+[Answers here](../../Answers/git-directory/adding-and-committing-git-objects.md)
+
