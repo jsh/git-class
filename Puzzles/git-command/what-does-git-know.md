@@ -14,3 +14,5 @@ Let's build a one-liner to show what it knows about.
 
 - What is each one?
 - Why does `git` know about them?
+
+[Answers here.](../../Answers/git-command/what-does-git-know.md)

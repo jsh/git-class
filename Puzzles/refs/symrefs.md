@@ -77,3 +77,5 @@ Try this:
 - Use what you've learned to look at this new symbolic ref.
 
 - Read the man page for git symbolic-refs, then use it to delete carya.
+
+[Answers here.](../../Answers/refs/symrefs.md)

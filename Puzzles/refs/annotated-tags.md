@@ -26,3 +26,5 @@ Let's make one of each:
 - You've seen all four kinds of git objects. What are they, and what kinds of sha1s does each contain?
 
 - What do the files in refs/heads and refs/tags contain?
+
+[Answers here.](../../Answers/refs/annotated-tags.md)

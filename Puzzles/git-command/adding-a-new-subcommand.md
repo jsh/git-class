@@ -12,3 +12,5 @@ Two can play at that game.
 
 Now type the command `git hello`
 Does it work?
+
+[Answers here.](../../Answers/git-command/adding-a-new-subcommand.md)
