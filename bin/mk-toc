@@ -1,0 +1,8 @@
+#!/bin/bash -eu
+# make a Markdown table-of-contents
+# for a directory of Markdown files
+
+printf "Table of Contents\n===\n"
+for i in *.md; do
+  printf '\n- [%s]('$i')\n' "$(sed 1q $i)"
+done

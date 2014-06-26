@@ -1,0 +1,14 @@
+# create a scratch repo for experiments
+
+git-scratch() {
+  # create /tmp/git.XXX directory, where XXX is random.
+  local tmp=$(mktemp -d --tmpdir git.XXX)
+  git init $tmp
+
+  # make a local name
+  ln -sfn $tmp $FUNCNAME.d
+  pushd $FUNCNAME.d
+  touch README
+  git add .
+  git commit -m initial
+}
