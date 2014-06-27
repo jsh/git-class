@@ -1,5 +1,11 @@
-gitg/gitk
+Compare and contrast gitg/gitk
 delete a branch
 make an extra level of symbolic refs
 replace bate with something else
 replace repo creation with git-scratch
+svn
+re-initialize a repo
+delete .git/
+What does file say about objects?
+Note that the same file always hashes to the same thing.
+Change the file without changing the tree.
