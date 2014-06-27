@@ -30,3 +30,16 @@ Does it work?
         $ rm -rf git-hello # so git doesn't find it here
         $ git hello
         hello, git
+
+New subcommands can be anywhere in your path, so you can have private subcommands.
+
+- Create a new command, `git-foo` that prints "FOO!", install it in `~/bin` and try it out.
+
+        $ echo <<<__EOF__ > ~/bin/git-foo
+        #!/bin/bash -eu
+        echo FOO!
+        __EOF__
+        $ chmod +x ~/bin/foo
+        $ git foo
+        FOO!
+
