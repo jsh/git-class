@@ -1,0 +1,9 @@
+: ${git_class:?'Set $git_class to the absolute path to the course materials'}
+[ -d $git_class ] || {
+  echo "directory '$git_class' does not exist" >&2
+  return 1
+}
+PATH+=:$git_class/bin
+export ans=$git_class/Answers
+export puz=$git_class/Puzzles
+source git-scratch
