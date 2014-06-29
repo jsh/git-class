@@ -5,3 +5,4 @@ Table of Contents
 - [What's in the `.git` directory](git-directory/toc.md)
 - [The `.git/refs` directory contains names for `git` objects](refs/toc.md)
 - [`git config` gives hierarchical configuration](gitconfig/toc.md)
+- [Miscellaneous, minor files in `.git/`](minor-files/toc.md)

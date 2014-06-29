@@ -68,3 +68,5 @@ Tag this commit and look at the tag.
   b02c56373937c14b6efdbf9ea0161ee20beb4a17
 
 - What happens if you delete the tag with `git tag -d sale`?
+
+[Answers here.](../../Answers/refs/tags.md)
