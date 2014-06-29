@@ -4,6 +4,7 @@
   return 1
 }
 PATH+=:$git_class/bin
+export git_class
 export ans=$git_class/Answers
 export puz=$git_class/Puzzles
 source git-scratch
