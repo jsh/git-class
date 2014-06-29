@@ -1,6 +1,43 @@
 Overview
 =========
 
+***Give a man a fish, and you feed him for a day. Teach a man to fish, and you give him liver flukes.***
+
+This material, and the
+[Prezi-based presentation](http://prezi.com/l3t4eheimfpm/git-under-the-covers/) that goes with it,
+will give you a deeper understanding of `git`.
+
+The fastest way to stop stumbling around in `git` and start understanding what you're doing is to understand how `git` works.
+
+It's not hard.
+
+The textual material is built around a series of puzzles to work through.
+None of them is supposed to be hard, but I supply answers in case I'm wrong about that.
+
+Surprisingly, nothing in this material will require that you write, or even read, programs.
+
+You will see no C, no Java, no Go or C# or Haskell.
+You will not need to learn Ruby or Python or PHP or Javascript.
+You will see certainly see bash. but mostly simple, one-liners.
+
+There will be occasional one-liners in Perl, used as command-line filters.
+Even these could probably have been in `sed` or `awk`, but why?
+`Perl` is ubiquitous, exept, perhaps, on embedded Linux systems, and there is no better tool for filtering on the occasional regular expression.
+If, however, you are manipulating git repos that are resident on your Android phone,
+you will need to roll up your sleeves and replace the calls to `perl` with something else.
+
+You will not need root access. Git expects you to make, use, and destroy git repos as yourself.
+
+Dollar signs at the beginnings of lines are shell prompts.
+There is no "git-specific scripting language."  It would not have occurred to me to say this,
+but the first person nice enough to look at this material, Kevin Cohen,
+said he was expecting one, and assumed that my bash snippets were in it.
+
+Paradoxically, while git is bigger and more sophisticated than other version control systems, it is also simpler and easier-to-understand.
+There's very little magic. Stuck on a desert island, without a compiler, you could re-implement git in user-level commands (though it might not be as fast).
+
+What you probably could not do, without knowing this material, is design it.
+
 Environment
 -----------
 
@@ -40,11 +77,6 @@ Directory contents
 The puzzles aren't meant to be hard or tedious, just thought-provoking.
 I suggest working through them before looking at my "answers," because your solution will probably be as good as mine, and it'll give you a chance to contrast the two.
 
-Prezi
------
-
-This repo accompanies a Prezi-based presentation. The URL of the presentation is in the `Prezi` file.
-
 Tools
 -----
 
@@ -81,4 +113,3 @@ When you're done, you can just `popd` back to where you invoked it.)
 
 If you find yourself using it a lot, add it to your `~/.bashrc`.
 Note that it has to be a function (or an alias) because of the directory change.
-
