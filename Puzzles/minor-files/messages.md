@@ -37,4 +37,4 @@ You've aborted the tag operation but the message isn't lost.
 
 - Is there a `git tag -F` that would let you reuse the message?
 
-[Answers here.](../../Answers/refs/messages.md)
+[Answers here.](../../Answers/minor-files/messages.md)

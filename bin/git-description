@@ -1,0 +1,8 @@
+#!/bin/bash -eu
+
+desc=$(git rev-parse --git-dir)/description
+if [ "$@" ]; then
+  echo "$@" > $desc
+else
+  cat $desc
+fi
