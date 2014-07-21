@@ -6,3 +6,4 @@ Table of Contents
 - [The `.git/refs` directory contains names for `git` objects](refs/toc.md)
 - [`git config` gives hierarchical configuration](gitconfig/toc.md)
 - [Miscellaneous, minor files in `.git/`](minor-files/toc.md)
+- [Packfiles provide performance](packfiles/packfiles.md)
