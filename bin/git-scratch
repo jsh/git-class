@@ -11,4 +11,6 @@ git-scratch() {
   touch README
   git add .
   git commit -m initial
+  alias up="cd $OLDPWD"
 }
+export -f git-scratch
