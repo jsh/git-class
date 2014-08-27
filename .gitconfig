@@ -1,0 +1,29 @@
+[user]
+  name = Jeffrey S. Haemer
+  email = jeffrey.haemer@gmail.com
+[github]
+  user = jsh
+  token = 63b3167bc49386ec8f38dfc2f9b0a3e5
+[credential]
+  helper = cache --timeout=3600
+[color]
+  ui = auto
+[alias]
+  lol = log --oneline --decorate --graph
+  lg = log --oneline --decorate --graph
+  lola = log --oneline --decorate --graph --all
+  lolr = log --oneline --decorate --walk-reflogs
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  root = rev-parse --show-toplevel
+  git = rev-parse --git-dir
+  s = status -s
+[push]
+  default = simple
+[pull]
+  rebase = true
+[core]
+  autocrlf = input
+[branch]
+  autosetuprebase = always
+[rerere]
+  enabled = true
