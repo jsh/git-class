@@ -76,13 +76,46 @@
       - show `gerrit`
     - It's up to you, isn't it?
 
+---
+
 ### Branches and Tags are Post-it Notes
-#### Annotated tags are the fourth object type.
+#### Branches and tags are entirely local.
+- Tags look like branches, yet there's a difference
+  - They're both sticky notes
+    - show `git tag`/`git branch`, `git tag -d`/`git branch -d`, `git push origin :<branchname>`, `git push origin :<tagname>`
+    - show `.git/refs/` as we make branches and tags
+  - Look around you. Wherever you are, that's `HEAD`
+    - `cat .git/HEAD`
+    - show `git status` and `HEAD` after a branch checkout and a tag checkout
+  - Branches and tags *name* SHA1s
+    - show `git rev-parse`
+    - show `git describe`
+    - discuss `<commit-ish>`
+    - show remote tags
+  - But how do they differ?
+    - show changing branches
+    - show trying to change tags
+- The <commit-ish> makes it easier to think about merges, diffs, rebases, fetches
+    - show some of these and talk through the process
+- "You can observe a lot by watching"
+  - show `gitg/gitk` on a tree as we branch, tag, merge
+  - show graphical demos on the web
+  - show GitHub graphs of branches, tags
+
+---
+
 ### Review: How's this perspective help?
 #### Think History. Think Linus. Think "How would I do this?" Think "What's in it for me?"
 
+
+
+
+
 ---
 ---
+
+Topics that I've considered:
+
 ## Rootin' Around in `.git`
 
 ### Everything `git` does is in `.git`. Almost
