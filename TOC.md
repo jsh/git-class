@@ -114,7 +114,7 @@
 ---
 ---
 
-Topics that I've considered:
+# Topics that I've considered but haven't necessarily put in.
 
 ## Rootin' Around in `.git`
 
