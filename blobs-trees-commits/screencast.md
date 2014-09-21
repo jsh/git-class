@@ -1,24 +1,55 @@
 ### You Just Need to Know Three Kinds of Things (Okay, four.)
 
 #### Objects have four flavors. Gotta have three.
-- Blobs, Trees, and Commits
-  - contrast with Linux files and directories
-  - show blobs and contents
-  - show trees and contents
-  - need to add commits for a VCS
-  - show commits and contents
-  - show `git log` and `ls -il`
+- Files are "blobs" and directories are "trees"
+  - show an `ls -il` of a file
+  - show `debugfs` and `cat <inode>`
+  - show `git cat-file -p` of a blob and `cat file` for a file
+  - remind everyone that files are data, inodes are metadata
+  - remind everyone that directories used to be represented as files
+  - show `ls` of a directory
+  - show `git cat-file -p` for a tree
+- A VCS only needs to add commits 
+  - show `git cat-file -p` for a commit
+  - show a second commit, again with `git cat-file -p`
+  - show `git log`, `git show` and look back again at `ls -il`
+  - do a merge, then `git cat-file -p` a commit with two parents
+  - show this with `gitg`.
 - In a filesystem, all you need is `/`. In commits, all you need is `HEAD`.
-  - trace a series of commits with git cat-file
-  - note the absence of a real `ls` analogue for commits
+  - review `namei()` in Unix/Linux
+  - note that if you can find the inode for '/' you can find the inode for any path.
+  - note that this is true for trees, too.
+  - show `git cat-file -p` for a commit object contains the tree: a pointer to '/' for the code
+  - show gitg
+  - note: trees are branched structures of blobs, commits are branched structures of trees
+  - note: having `/` gives you everything about a directory or tree
+  - note: having `HEAD` gives you everything about a commit history
+- But wait. How do I name commits? 
+  - note the absence of a real `ls` or `cd` analogue for commits
+  - show `git tag` lets me name commits
+  - show `git branch` lets me name commits
 - Where is all this information?
-  - give a quick tour of `.git` with `tree`
+  - show `tree .git`
+  - show `tree .git/refs`
   - show the steps in `git init`, `git add`, `git commit`
-  - show the correspondence between output of `git cat-file` and `.git/objects`
-- What other analogues are there?
-  - show "symlinks" with `.git/HEAD` and `git symbolic-ref`
-- _Quo vadis?_ If we want to extend this a level, what could come next?
-  - show branches with `git branch -a` and `.git/remotes`
-  - show remotes with `git remote -v` and `.git/remotes`
-  - show annotated tags with `git cat-file`
+  - show that every SHA1 corresponds to an easy-to-find object in `.git/objects`
+  - show `git tag -l` and `.git/refs/tags`
+  - show `git branch -a` and `.git/refs/heads`
+  - show `git remote -v` and `.git/refs/heads/remotes`
+  - show annotated tags with `git cat-file -p` on an annotated tag
   - show `gitk` and `gitg`
+  - show how to hand-craft an object
+- What other analogues are there?
+  - show a Linux symlink.
+  - note: symlinks let us refer to objects by name instead of inode
+  - note: symlinks are files with text content, that get handled specially by kernel routines
+  - note: Windows has shortcuts, but lacks symlinks
+  - show contents of `.git/HEAD`
+  - show `git symbolic-ref`
+  - note: this is just another way to name commits
+- _Quo vadis?_ If we want to extend this a level, what could come next?
+  - note: git's design allows easy extension
+  - show `/usr/lib/git-core`
+  - show `git hello`
+  - show `apt-get install git-flow`
+  - challenge: write an extension to add a level, say `git ls` or `git cd`
