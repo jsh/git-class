@@ -28,6 +28,7 @@
   - note the absence of a real `ls` or `cd` analogue for commits
   - show `git tag` lets me name commits
   - show `git branch` lets me name commits
+  - show `git rev-parse`
 - Where is all this information?
   - show `tree .git`
   - show `tree .git/refs`
@@ -53,3 +54,9 @@
   - show `git hello`
   - show `apt-get install git-flow`
   - challenge: write an extension to add a level, say `git ls` or `git cd`
+- _Review_ Where have we been?
+  - note: there are three basic kinds of objects: blobs, trees, and commits
+  - note: git is a filesystem: blobs and trees are files and directories
+  - note: a VCS requires adding commits -- like filesystem snapshots in btrfs or zfs
+  - note: trees give blobs and trees names, tags and branches give commits names
+  - note: having `/` gives you a tree, having `HEAD` gives you a commit history
