@@ -1,0 +1,64 @@
+### SCM History Helps it Make Sense
+#### What came before?
+- A brief history by decade
+  - show `rcs`
+  - note: Marc J. Rochkind wrote SCCS in 1972.
+  - note: RCS came in the mid-80's, CVS in the mid-90's, DVCS in the mid-naughties.
+  - note: each is tailored to the hardware and software environments of its time
+  - note: each has flaws that give birth to its successor
+- What `git` gets you. Use cases for DVCS:
+  - note: four use cases
+    - removing the Linux-development bottleneck
+    - flying to Bucharest or Tokyo
+    - collaborating at a conference or coffee shop
+    - personal branches and tags
+  - show: example of `svn` vs. `git` speed
+- The hard problems: diffing and merging
+  - show: `git diff`, `git merge`, `git rebase`
+  - note: there are other DVCS tools: mercurial, bitkeeper, arch, bazaar, darcs, svk, ... 
+#### What's here now?
+- Successful tools create their own ecosystem. Some examples
+  - CVSDude -> CollabNet
+    - show Collabnet
+  - GitHub: if it's a DVCS, what's the point?
+    - show: GitHub
+    - show: `git clone` from GitHub
+    - note: a central synchronization point is not a bottleneck
+    - show: sample exercises on GitHub
+    - note: a central synchronization point permits maintained cloud storage with extra sauce
+    - note: a central synchronization point lets you publish source to yourself and others
+  - GitHub Services
+    - note: GitHub itself is a service that breeds an ecosystem
+    - show: DockerHub
+    - show: list of services
+    - note: GitHub's `hub` command
+    - note: there are alternatives to GitHub -- bitbucket, GitLab, Atalassian Stash
+  - `git`'s simple design makes it easy to build commands on top of it.
+    - show: `gitg` again
+    - show: `.gitconfig` and `git lol`
+    - show: `git-scratch`
+#### What might be coming -- filling the gaps?
+- _Quo vadis?_ What are folks groping toward?
+  - What's missing? (What have folks built?)
+    - show: `apt-cache search git`
+    - Workflow
+      - show: `git-flow`, `/usr/lib/git-core` and how `/usr/bin/git` work
+      - show: aliases in `.git/config`
+      - note: there is no `git alias`, no `git function definition`
+      - mention GitHub workflow and Code School's **Mastering GitHub** video
+    - Handling multiple repos.
+      - show: `git submodule`
+      - note: `git subtree`
+      - show: Google's `repo`
+      - note: there is no consensus
+    - Access control
+      - show: `gitolite`
+      - show: `gerrit`
+      - note: `gitorious`, `gitosis` came before, what comes after?
+  - It's up to you, isn't it?
+#### Review
+- History tells us how we got here and why.
+- Each generation focuses on the mistakes of its parents.
+- Git is a DVCS
+- `git-core` is missing things that people are supplying
+- as I give this, it's nearly 2015
