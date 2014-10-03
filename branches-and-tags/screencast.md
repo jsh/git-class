@@ -5,16 +5,23 @@
     - show `git tag`/`git branch`, `git tag -d`/`git branch -d`, `git push origin :<branchname>`, `git push origin :<tagname>`
     - show `.git/refs/` as we make branches and tags
   - Look around you. Wherever you are, that's `HEAD`
-    - `cat .git/HEAD`
+    - show `cat .git/HEAD`
     - show `git status` and `HEAD` after a branch checkout and a tag checkout
   - Branches and tags *name* SHA1s
     - show `git rev-parse`
     - show `git describe`
     - discuss `<commit-ish>`
-    - show remote tags
+  - Remotes are just names, too 
+    - show `git remote -v`
+    - show `.git/refs/heads/remotes` and `git remote add`
+    - show `git fetch`
+    - show `git push`
   - But how do they differ?
     - show changing branches
     - show trying to change tags
+    - show actually changing tags
+    - show trying to change remotes
+    - show actually changing remotes
 - The <commit-ish> makes it easier to think about merges, diffs, rebases, fetches
     - show some of these and talk through the process
 - "You can observe a lot by watching"
