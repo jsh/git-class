@@ -2,10 +2,11 @@
 #### Branches and tags are entirely local.
 - Tags look like branches, yet there's a difference
   - They're both sticky notes
-    - show `git tag`/`git branch`, `git tag -d`/`git branch -d`, `git push origin :<branchname>`, `git push origin :<tagname>`
-    - show `.git/refs/` as we make branches and tags
+    - show `gitg/gitk` on a tree with branches and tags
+    - make a new commit and a new tag and refresh `gitg`
   - Look around you. Wherever you are, that's `HEAD`
     - show `cat .git/HEAD`
+    -  
     - show `git status` and `HEAD` after a branch checkout and a tag checkout
   - Branches and tags *name* SHA1s
     - show `git rev-parse`
@@ -24,7 +25,10 @@
     - show actually changing remotes
 - The <commit-ish> makes it easier to think about merges, diffs, rebases, fetches
     - show some of these and talk through the process
-- "You can observe a lot by watching"
-  - show `gitg/gitk` on a tree as we branch, tag, merge
+- Review: "You can observe a lot by watching"
+  - note: `.git/refs` holds names of <commit-ish>s -- analogous, in ways, to the directory in Linux
+  - note: names for branches move as we commit, names for tags don't
+  - note: Names for remotes move when we fetch and push
+  - note: graphical tools, like `gitg/gitk`, can help you visualize
   - show graphical demos on the web
-  - show GitHub graphs of branches, tags
+
